@@ -29,8 +29,6 @@ function turnLeft(){
   console.log("turnLeft executed! Current direction is " + rover.direction);
 }
 
-  
-  console.log("turnLeft executed!");
 
 
 function turnRight(){
@@ -60,7 +58,7 @@ function moveForward(){
   }
   if(rover.direction === "E" && rover.x < 10){
     rover.x += 1;
-  }
+  } else if {
     else if(rover.direction === "W" && rover.x > 0){
       rover.x -= 1;
       
@@ -72,6 +70,7 @@ function moveForward(){
     rover.travelLog.push("(" + rover.x + ", " + rover.y + ")");
 
   }
+}
 
   function moveBackward(){
     if(rover.direction === "N" & rover.y < 10){
@@ -82,7 +81,7 @@ function moveForward(){
     }
     if(rover.direction === "E" && rover.x > 0){
       rover.x -= 1;
-    }
+    } else if {
     else if(rover.direction === "W" && rover.x < 10){
       rover.x += 1;
     }
@@ -90,4 +89,5 @@ function moveForward(){
       console.log("Out of Bounds!")
     }
     rover.travelLog.push("(" + rover.x + ", " + rover.y + ")");
+  }
   }
